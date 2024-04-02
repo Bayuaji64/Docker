@@ -25,3 +25,9 @@ WIth volume
 
  
 docker run --name goals-backend -v "/Users/bayuaji/Documents/mini project/Self Development/Docker/multi-01-starting-setup/backend:/app" -v logs:/app/logs -v /app/node_modules  -e MONGODB_USERNAME=bayuaji --rm -d -p 80:80 --network goals-net goals-node
+
+
+frontend
+
+
+ docker run -v "/Users/bayuaji/Documents/mini project/Self Development/Docker/multi-01-starting-setup/frontend/src:/app/src"  --name goals-frontend --rm -p 3000:3000 -it goals-react
